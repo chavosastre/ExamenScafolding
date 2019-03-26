@@ -29,9 +29,9 @@
             @Html.DisplayFor(modelItem => item.DIreccion)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Clave }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Clave }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Clave })
+            @Html.ActionLink("Edit", "Edit", new { id=item.Clave.Replace(" ", "") }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Clave.Replace(" ", "") }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Clave.Replace(" ", "") })
         </td>
     </tr>
 }
